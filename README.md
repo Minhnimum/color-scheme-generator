@@ -2,6 +2,8 @@
 
 A simple, responsive color scheme generator that fetches palettes from The Color API and lets you copy hex values with one click.
 
+Live Website: [https://colschemegenerator.netlify.app/](https://colschemegenerator.netlify.app/)
+
 Features:
 - Pick a base color and scheme type (monochrome, complementary, triad, etc.)
 - Instant preview grid with hover and copy-to-clipboard
