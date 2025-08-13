@@ -1,0 +1,85 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.color-scheme {
+    width: 50% ;
+    height: 42px;
+    border-radius: 4px;
+}
+
+.colorPicker {
+    width: 51px;
+    height: 42px;
+    border: none;
+    padding: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.getschemebtn {
+    width: 123px;
+    height: 42px;
+    background-color: white;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.getschemebtn:hover {
+    background-color: #f0f0f0;
+}
+
+
+.color-scheme-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    height: 550px;
+    max-width: 600px;
+    margin: 0 auto;
+    border: #ccc 1px solid;
+}
+.color-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    max-height: 550px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+  }
+  .color-scheme {
+    background-color: #333;
+    color: #f0f0f0;
+  }
+  .getschemebtn {
+    background-color: #333;
+    color: #f0f0f0;
+    border: 1px solid #555;
+  }
+  .getschemebtn:hover {
+    background-color: #444;
+  }
+}

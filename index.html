@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <header>
+            <div class="color-control">
+                <input type="color" id="colorPicker" class="colorPicker" value="#ff0000">
+            </div>
+            <select id="color-scheme" class="color-scheme">
+                <option id="color-input">Monochrome</option>
+                <option id="color-input">Monochrome-dark</option>
+                <option id="color-input">Monochrome-light</option>
+                <option id="color-input">Analogic</option>
+                <option id="color-input">Complement</option>
+                <option id="color-input">Analogic-complement</option>
+                <option id="color-input">Triad</option>
+            </select>
+            <button id="get-scheme" class="getschemebtn">Get color scheme</button> 
+        </header>
+        <main>
+            <div class="color-scheme-container">
+                <div class="loading"id="loading" style="display: none;">
+                    Generated your color scheme
+                </div>
+                <div class="error" id="error" style="display: none;">
+                    An error occurred while generating the color scheme.
+                </div>
+                <div class="color-grid" id="colorgrid"></div>
+            </div>
+        </main>
+        <script src="index.js" type="module"></script>
+    </body>
+</html>
